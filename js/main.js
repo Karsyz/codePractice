@@ -1,22 +1,15 @@
-
-//  Get array of all challenge object names
-
-
-//  challenge data array
-let challengeData = [["default", "description", "code", "arithmetic()" ], ["Challenge Name 1", "Challenge Description 1", "Challenge Code 1", "functionName1()"], ["Challenge Name 2", "Challenge Description 2", "Challenge Code 2", "functionName2()"], ["Challenge Name 3", "Challenge Description 3", "Challenge Code 3", "functionName3()"], ["Challenge Name 4", "Challenge Description 4", "Challenge Code 4", "functionName4()"] ]
-
 //  current challenge array
 let currentChallenge = []
 
 // function name for code button
-let functNameForCoderunButton = ""
+let functNameForCoderunButton = "noFunction()"
 
 //  Trigger make options list
 document.body.onload = makeOptionsList
 
 //  Make options list from challenge data array
 function makeOptionsList() {
-    for (i = 1; i < challengeData.length; i++ ) {
+    for (i = 0; i < challengeData.length; i++ ) {
         addOptionElements(challengeData[i]);
     }
 }
@@ -77,4 +70,9 @@ function functionName3 () {
 
 function functionName4 () {
     console.log("it works 4")
+}
+
+function noFunction() {
+    console.log("Made by Karsy")
+    alert("Made by Karsy")
 }
