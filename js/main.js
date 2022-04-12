@@ -56,22 +56,6 @@ function runCode () {
     eval(functNameForCoderunButton)
 }
 
-function functionName1 () {
-    console.log("it works 1")
-}
-
-function functionName2 () {
-    console.log("it works 2")
-}
-
-function functionName3 () {
-    console.log("it works 3")
-}
-
-function functionName4 () {
-    console.log("it works 4")
-}
-
 function noFunction() {
     console.log("Made by Karsy")
     alert("Made by Karsy")
