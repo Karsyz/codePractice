@@ -19,11 +19,16 @@ const sequenceSum = (begin, end, step) => {
     for (i = begin; i <= end; i += step) {
         sum += i
     }
-    alert(sum)
     return sum
 
   }
 
+  function runSequenceSum() {
+    let prmpt1 = Number(prompt("Enter first number",2))
+    let prmpt2 = Number(prompt("Enter second number",8))
+    let prmpt3 = Number(prompt("Enter third number",2))
+    alert(sequenceSum(prmpt1,prmpt2,prmpt3))
+} 
 
 
 let sumOfSequence = [   "Sum Of a Sequence", 
@@ -32,6 +37,6 @@ let sumOfSequence = [   "Sum Of a Sequence",
 
                         "const sequenceSum = (begin, end, step) => {<br>    if (begin > end)<br>        return 0<br>    let sum = 0<br> for (i = begin; i <= end; i += step) {<br>      sum += i<br>}<br>   return sum<br>}<br><br> sequenceSum(2,8,2) // returns 20", 
 
-                        "sequenceSum(2,8,2)"]
+                        "runSequenceSum()"]
 
 challengeData.push(sumOfSequence)

@@ -34,7 +34,7 @@ document.getElementById('solutions').addEventListener('change', displayChallenge
 
 //  When a specific challenge is selected from the list
 function displayChallenge() {
-    console.log(challengeData[this.value])
+    // console.log(challengeData[this.value])
     displayDescription(challengeData[this.value][1])
     displayCode(challengeData[this.value][2])
     functNameForCoderunButton = challengeData[this.value][3]
