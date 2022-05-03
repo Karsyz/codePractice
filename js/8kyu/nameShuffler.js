@@ -4,7 +4,9 @@
 
 
 function nameShuffler(str){
-    
+  return str.split(' ').reverse().join(' ')
+}
 
-    
-  }
+
+
+console.log(nameShuffler('fifth fourth third second first'))
