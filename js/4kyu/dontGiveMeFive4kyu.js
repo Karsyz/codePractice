@@ -123,30 +123,70 @@
 // }
 
 
+
+
+
+
 function dontGiveMeFive(start, end) {
     let count = 0
-    for(i = start; i <= end; i++) {
-        if ( !( i.toString().includes('5') ) ) {
-            count++
-        }
-    }
-    return count;
+    let total = end - start
+    let totalArr = Array.from(total.toString())
+    console.log(totalArr)
+    // is five count++
+    
+
+    // count by 1000s?
+    // use algorithm to just count by thousands
+
+    // 45129645 the big total
+
+    // 40000000 40x millions
+    // 5000000 5x millions
+    // 100000 100x thousands
+    // 20000 20x thousands
+    // 9000 9x thousands if > 6000 add 1000 for 5000-5999 range
+    // 645 
+
+    // 19
+    // 271     
+    // 3439
+
+
+    // if (total < 10000) {
+        // for(i = 1; i <= total; i++) {
+        //     if ( ( i.toString().includes('5') ) ) {
+        //         count++
+        //     }
+        // }
+    // }else {
+    //     console.log('wtf')
+    // }   
+
+    // return count;
 }
 
-console.log(dontGiveMeFive(-17, 9))
-console.log(dontGiveMeFive(1, 9))
-console.log(dontGiveMeFive(4, 17))
-console.log(dontGiveMeFive(-17, -4))
+// console.log(dontGiveMeFive(1, 10))
+// console.log(dontGiveMeFive(1, 100))
+console.log(dontGiveMeFive(0, 10000))
+// console.log(dontGiveMeFive(1, 10000))
+// console.log(dontGiveMeFive(1, 100000))
+// console.log(dontGiveMeFive(1, 1000000))
 
-console.log(dontGiveMeFive(984, 4304))
-console.log(dontGiveMeFive(2313, 2317))
-console.log(dontGiveMeFive(-4045, 2575))
-console.log(dontGiveMeFive(-4436, -1429))
 
-console.log(dontGiveMeFive(0, 1))
-console.log(dontGiveMeFive(5, 15))
-console.log(dontGiveMeFive(-5, 4))
-console.log(dontGiveMeFive(51, 60))
+// console.log(dontGiveMeFive(-17, 9))
+// console.log(dontGiveMeFive(1, 9))
+// console.log(dontGiveMeFive(4, 17))
+// console.log(dontGiveMeFive(-17, -4))
+
+// console.log(dontGiveMeFive(984, 4304))
+// console.log(dontGiveMeFive(2313, 2317))
+// console.log(dontGiveMeFive(-4045, 2575))
+// console.log(dontGiveMeFive(-4436, -1429))
+
+// console.log(dontGiveMeFive(0, 1))
+// console.log(dontGiveMeFive(5, 15))
+// console.log(dontGiveMeFive(-5, 4))
+// console.log(dontGiveMeFive(51, 60))
 
 
 // console.log(dontGiveMeFive(40076, 215151422963990))
