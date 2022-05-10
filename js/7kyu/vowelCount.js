@@ -16,3 +16,8 @@ function getCount(str) {
   }
 
   console.log(getCount("abracadabra"))
+
+
+
+  //  single line regex solution
+  // const getCount = str => str.replace(/[^a|e|i|o|u]/g, '').length;
