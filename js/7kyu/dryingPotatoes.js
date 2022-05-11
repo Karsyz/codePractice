@@ -23,33 +23,18 @@
 // Example:
 // potatoes(99, 100, 98) --> 50
 
-// function potatoes(p0, w0, p1) {
-    
-//     // init water mass
-//     let initWaterMass = ((p0/100) * w0)
-//     // console.log(initWaterMass)
-
-//     // init dry mass
-//     let initDryMass = w0 - initWaterMass
-//     // console.log(initDryMass)
-
-//     // final water mass
-//     let finalWaterMass = (initWaterMass / 100) * p1
-//     // console.log(finalWaterMass)
-
-//     // return trunc of init dry mass plus final water mass
-//     return Math.trunc(initDryMass + finalWaterMass)
-// }
-
-// console.log(potatoes(99, 100, 98))
-console.log(potatoes(82, 127, 80)); //114
-console.log(potatoes(93, 129, 91)); //100
-
+// 'The Potato Paradox'
+//  solid mass doesn't change
+//  percentage of water compared unchanged solid mass, 1kg is 1% of 100kg vs 2% of 50kg
 
 function potatoes(p0, w0, p1) {
-    let weightOfWater = w0*p0;
-    let weightOfDryMatter = w0*100-weightOfWater;
-    let weightOfPotatoAfterDrying = weightOfDryMatter/(100-p1);
+    let initWater = w0 * p0
+    let initDryMatter = (w0 * 100) - initWater
+    let finalWeight = initDryMatter / (100 - p1)
     
-    return Math.trunc(weightOfPotatoAfterDrying);
-  }
+    return Math.trunc(finalWeight)
+}
+
+
+
+console.log(potatoes(82, 127, 80)); //114
