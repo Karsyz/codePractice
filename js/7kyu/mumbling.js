@@ -29,3 +29,8 @@ function accum(s) {
   //return output and remove last hyphen
   return output.slice(0,output.length-1)
 }
+
+// This is the top most refactored and concise version on codewars
+// function accum(s) {
+//   return s.split('').map((c, i) => (c.toUpperCase() + c.toLowerCase().repeat(i))).join('-');
+// }
