@@ -7,16 +7,16 @@
 // "moOse" --> false (ignore letter case)
 
     
-  function isIsogram(str) {
-    let strs = str.toLowerCase()
-    for(i = 0; i < strs.length; i++) {
-      if ( strs.search(strs[strs.length -1 -i]) != strs.length -1 -i ) {
-        return false
-      }
+function isIsogram(str) {
+  let strs = str.toLowerCase()
+  for(i = 0; i < strs.length; i++) {
+    if ( strs.search(strs[strs.length -1 -i]) != strs.length -1 -i ) {
+      return false
     }
-   return true
   }
+ return true
+}
 
 
-  console.log(isIsogram("Dermatoglyphics"))
-  console.log(isIsogram("isIsogram"))
+console.log(isIsogram("Dermatoglyphics"))
+console.log(isIsogram("isIsogram"))
