@@ -10,25 +10,16 @@
 
 
 function arrayDiff(a, b) {
-    let arr = []
-    for (i = 0; i < a.length; i++) {
-        if ( a.findIndex(a[i]) === -1 ) {
-            arr.push(a[i])
-        }
-    }
-    return arr
+    return a.filter( e => !b.includes(e)  )
 }
-
-
-
 
 // full stack app development
 // wireframe => database => schema => backend => frontend
 
 
 console.log( arrayDiff([1,2], [1]) )        // [2]
-// console.log( arrayDiff([1,2,2], [1])  )     // [2,2]
-// console.log( arrayDiff([1,2,2], [2])  )     // [1]
-// console.log( arrayDiff([1,2,2], [])  )      //[1,2,2]
-// console.log( arrayDiff([], [1,2]) )         // []
-// console.log( arrayDiff([1,2,3], [1,2])  )   //[3] 
+console.log( arrayDiff([1,2,2], [1])  )     // [2,2]
+console.log( arrayDiff([1,2,2], [2])  )     // [1]
+console.log( arrayDiff([1,2,2], [])  )      //[1,2,2]
+console.log( arrayDiff([], [1,2]) )         // []
+console.log( arrayDiff([1,2,3], [1,2])  )   //[3] 
