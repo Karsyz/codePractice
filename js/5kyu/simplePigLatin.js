@@ -24,7 +24,7 @@ function pigIt(str){
 // ^ assert position at beginning of the string
 // [a-zA-Z] check for letters lowercase and uppercase
 // + between one and unimited times, as many as possible, giving back as needed (greedy)
-// $ assert position at the end of hte string (or before the line break at the end of thes string, if any)
+// $ assert position at the end of the string (or before the line break at the end of thes string, if any)
 
 
 
