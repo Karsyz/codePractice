@@ -23,6 +23,10 @@
 
 function dontGiveMeFive(start, end) {
     
+    // sanatize input to positive only
+    // arrays must be numbers only and not strings
+
+
     // count range start
     let arrStart = start.toString().split('').reverse()
     
@@ -78,17 +82,19 @@ function dontGiveMeFive(start, end) {
     
     // start count
     startCount = countFirst100(arrStart) + count(arrStart) 
+    console.log(startCount)
 
     // end count
     endCount = countFirst100(arrEnd) + count(arrEnd) 
+    console.log(endCount)
 
     // return
     // if count start positive, minus from end
     // if count start negative, add to end
     if (startCount > 0) {
-        return endCount - startCount
+        return (end - endCount) - (start - startCount)
     }else {
-        return startCount + endCount
+        return (end - endCount) + (start - startCount)
     }
 
 }
@@ -121,9 +127,9 @@ function dontGiveMeFive(start, end) {
 // console.log(dontGiveMeFive(-17, -4))  // 12
 
 console.log(dontGiveMeFive(984, 4304)) // 2449
-console.log(dontGiveMeFive(2313, 2317)) // 4
-console.log(dontGiveMeFive(-4045, 2575)) // 4819
-console.log(dontGiveMeFive(-4436, -1429)) // 2194
+// console.log(dontGiveMeFive(2313, 2317)) // 4
+// console.log(dontGiveMeFive(-4045, 2575)) // 4819
+// console.log(dontGiveMeFive(-4436, -1429)) // 2194
 
 // console.log(dontGiveMeFive(0, 1)) // 2
 // console.log(dontGiveMeFive(5, 15)) // 9
