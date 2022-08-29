@@ -11,4 +11,3 @@ function combineNames(a, b) {
 
 // tests (returns true)
 console.log( combineNames('James', 'Stevens') === 'James Stevens')
-console.log( combineNames('David', 'Rando') === 'David Rando')
