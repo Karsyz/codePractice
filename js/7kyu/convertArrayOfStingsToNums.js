@@ -14,5 +14,5 @@ function toNumberArray(stringarray){
   }
 
 
-// tests return true
+// tests 
 console.log( toNumberArray(["1.1","2.2","3.3"]) )  // [ 1.1, 2.2, 3.3 ]
