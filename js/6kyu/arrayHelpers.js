@@ -10,12 +10,12 @@ Array.prototype.square = function() {
                     
   // numbers.average(); // must return 3
   Array.prototype.average = function() { 
-    return this.reduce( (a, c) => a + c ) / this.length
+    return this.reduce( (a, c) => a + c, 0) / this.length
   }
                     
   // numbers.sum();     // must return 15
   Array.prototype.sum = function() { 
-    return this.reduce( (a, c) => a + c) 
+    return this.reduce( (a, c) => a + c, 0) 
   }
   
   // numbers.even();    // must return [2, 4]
