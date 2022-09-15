@@ -23,5 +23,6 @@ const arr = (N) => {
 
 // tests
 console.log( arr() )
+
 console.log( arr(5) )
 
