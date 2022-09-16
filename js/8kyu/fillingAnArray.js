@@ -23,9 +23,5 @@ const arr = (N) => {
 
 // tests
 console.log( arr() )
-<<<<<<< HEAD
-
-=======
->>>>>>> 49442615fbad4bdb845c700c39d9d4c43d915b64
 console.log( arr(5) )
 
