@@ -9,7 +9,6 @@
 
 
 function areYouPlayingBanjo(name) {
-    console.log(`${name} plays banjo`)
     if ( name[0] == 'R' ) {
       return `${name} plays banjo`
     }else if ( name[0] == 'r' ) {
@@ -20,8 +19,6 @@ function areYouPlayingBanjo(name) {
 }
 
 
-console.log( areYouPlayingBanjo("Adam")  === "Adam does not play banjo" )
-console.log( areYouPlayingBanjo("Paul")  === "Paul does not play banjo" )
-console.log( areYouPlayingBanjo("Ringo")  === "Ringo plays banjo" )
-console.log( areYouPlayingBanjo("bravo")  === "bravo does not play banjo" )
-console.log( areYouPlayingBanjo("rolf")  === "rolf plays banjo" )
+module.exports = {
+  areYouPlayingBanjo,
+};

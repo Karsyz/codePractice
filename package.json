@@ -1,7 +1,25 @@
 {
+  "name": "codewars",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test",
+    "coverage": "nyc npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Karsyz/codewars.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Karsyz/codewars/issues"
+  },
+  "homepage": "https://github.com/Karsyz/codewars#readme",
   "dependencies": {
     "chai": "^4.3.6",
-    "describe": "^1.2.0",
-    "express": "^4.18.1"
+    "mocha": "^10.0.0",
+    "nyc": "^15.1.0"
   }
 }
