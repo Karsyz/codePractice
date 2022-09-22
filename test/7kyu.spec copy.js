@@ -24,3 +24,13 @@ describe("Write a function that takes an array of strings as an argument and ret
     assert.deepEqual(sortByLength(["A longer sentence", "The longest sentence", "A short sentence"]),["A short sentence", "A longer sentence", "The longest sentence"]);
   });
 });
+
+
+const { getEvenNumbers} = require('../js/7kyu/jsArrayFilter')
+
+describe("Write a function that takes an array of numbers and removes all odd numbers.", function(){
+
+  it("Test 1",function(){
+    assert.deepEqual( getEvenNumbers([2,3,4,5,6,7,8]),[2,4,6,8]);
+  });
+});

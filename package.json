@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon server.js",
     "test": "mocha test",
     "coverage": "nyc npm run test"
   },
@@ -18,8 +19,25 @@
   },
   "homepage": "https://github.com/Karsyz/codewars#readme",
   "dependencies": {
+    "bcrypt": "^5.0.1",
     "chai": "^4.3.6",
+    "codemirror": "^5.65.9",
+    "connect-mongo": "^4.6.0",
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1",
+    "express-flash": "^0.0.2",
+    "express-session": "^1.17.3",
     "mocha": "^10.0.0",
-    "nyc": "^15.1.0"
+    "mongodb": "^4.10.0",
+    "mongoose": "^6.6.1",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "nodemon": "^2.0.20",
+    "nyc": "^15.1.0",
+    "passport": "^0.6.0",
+    "passport-local": "^1.0.0",
+    "react": "^16.14.0",
+    "react-codemirror2": "^7.2.1",
+    "validator": "^13.7.0"
   }
 }
