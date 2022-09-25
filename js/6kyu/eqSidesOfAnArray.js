@@ -46,7 +46,7 @@ function findEvenIndex(arr) {
     }
     // If there is no index that would make this happen, return -1.
     return -1
-  }
+}
 
 
 
