@@ -3,6 +3,7 @@
 // The original array will be not empty and will contain at least "number" even numbers.
 
 function lastEvenNums(arr, qty) {
+  // for loop
   // let count = 0
   // let nums = []
   // for (let i = arr.length; i >= 0; i--) {
@@ -15,13 +16,11 @@ function lastEvenNums(arr, qty) {
   //   }
   // }
   // console.log(newArr)
+
+  //one liner
   return arr.filter(el => el % 2 === 0).slice(-qty)
 
 }
-
-
-
-
 
 console.log( lastEvenNums( [1, 2, 3, 4, 5, 6, 7, 8, 9], 3) ) // [4, 6, 8]
 console.log( lastEvenNums( [-22, 5, 3, 11, 26, -6, -7, -8, -9, -8, 26], 2) ) // [-8, 26]
