@@ -10,3 +10,15 @@ describe("Adds one object to another.  Will overwrite values if keys already exi
     assert.deepEqual(addtoo({a: 'asdf', b: 'asdf'}, {a: 'qwer', b: 4}), {a: 'qwer', b: 4});
   });
 });
+
+
+const { nameOfTheOldest } = require('../js/funFunctions/nameOfTheOldest')
+
+describe("Should return the name of the oldest person", () => {
+  const arrayOfPeople = [{name: 'sally', age: 18}, {name: 'henry', age: 21},{name: 'margret', age: 78},{name: 'joe', age: 25},{name: 'april', age: 68}]
+  
+  it('Should pass', () => {
+    assert.deepEqual( nameOfTheOldest(arrayOfPeople), 'margret');
+  });
+
+});
